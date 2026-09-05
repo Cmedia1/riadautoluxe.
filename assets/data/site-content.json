@@ -1,0 +1,107 @@
+{
+  "business": {
+    "name": "Riad Auto Luxe",
+    "legalName": "Riad Auto Luxe",
+    "tagline": "Location de voitures de luxe",
+    "city": "Chéraga",
+    "region": "Alger",
+    "country": "Algérie",
+    "addressLine": "Chéraga, Alger, Algérie",
+    "streetAddress": "À compléter (adresse exacte de l'agence)",
+    "postalCode": "16002",
+    "latitude": 36.7667,
+    "longitude": 2.9500,
+    "phonePrimaryDisplay": "0562 46 57 99",
+    "phonePrimaryIntl": "+213562465799",
+    "phoneSecondaryDisplay": "0696 03 96 41",
+    "phoneSecondaryIntl": "+213696039641",
+    "whatsappPrimary": "213562465799",
+    "whatsappSecondary": "213696039641",
+    "email": "contact@riadautoluxe.dz",
+    "instagram": "https://www.instagram.com/riad.auto.luxe/",
+    "instagramHandle": "@riad.auto.luxe",
+    "facebook": "https://www.facebook.com/p/Riad-auto-luxe-61574414854856/",
+    "hoursNote": "Disponible 7j/7 sur WhatsApp — réponse rapide",
+    "hoursDetailed": "À confirmer avec l'agence, puis à mettre à jour ici",
+    "founded": "2023"
+  },
+  "hero": {
+    "title1": "La route mérite mieux",
+    "title2": "qu'une voiture ordinaire.",
+    "subtitle": "Riad Auto Luxe met à votre disposition une flotte premium basée à Chéraga, pour vos déplacements d'affaires, vos évènements ou vos envies du quotidien — en location courte durée, longue durée ou LOA.",
+    "ctaPrimary": "Voir la flotte",
+    "ctaSecondary": "Réserver sur WhatsApp"
+  },
+  "promo": {
+    "active": true,
+    "label": "Promo du moment",
+    "text": "Tarifs préférentiels sur la location longue durée ce mois-ci. Places limitées.",
+    "cta": "En profiter sur WhatsApp"
+  },
+  "stats": [
+    { "value": "215K+", "label": "Communauté Instagram" },
+    { "value": "Chéraga", "label": "Agence basée à Alger" },
+    { "value": "24/48h", "label": "Réponse sur WhatsApp" }
+  ],
+  "whyUs": [
+    {
+      "title": "Un parc entretenu et récent",
+      "text": "Chaque véhicule est vérifié avant remise des clés : mécanique, propreté et niveau de carburant contrôlés systématiquement."
+    },
+    {
+      "title": "Des formules flexibles",
+      "text": "Courte durée, longue durée ou LOA : nous adaptons la formule à votre usage réel, pas l'inverse."
+    },
+    {
+      "title": "Un contact direct, sans intermédiaire",
+      "text": "Vous échangez avec l'équipe Riad Auto Luxe elle-même, par appel ou WhatsApp — aucune plateforme tierce entre vous et nous."
+    }
+  ],
+  "services": [
+    {
+      "id": "courte-duree",
+      "title": "Location courte durée",
+      "summary": "Une voiture premium pour quelques jours : déplacement professionnel, mariage, weekend ou arrivée d'aéroport.",
+      "details": [
+        "Location à la journée, au weekend ou à la semaine",
+        "Véhicule nettoyé et carburant vérifié avant chaque départ",
+        "Remise et restitution à convenir avec l'équipe",
+        "Kilométrage et conditions communiqués clairement avant réservation"
+      ]
+    },
+    {
+      "id": "longue-duree",
+      "title": "Location longue durée",
+      "summary": "Un véhicule sur plusieurs mois, avec un tarif dégressif adapté à la durée d'engagement.",
+      "details": [
+        "Engagement sur plusieurs mois avec tarif préférentiel",
+        "Solution pensée pour salariés, cadres ou besoin prolongé",
+        "Entretien courant inclus selon la formule choisie",
+        "Possibilité de changer de véhicule selon disponibilité"
+      ]
+    },
+    {
+      "id": "loa-leasing",
+      "title": "LOA & leasing",
+      "summary": "Roulez dans un véhicule premium sans immobiliser votre capital, avec option d'achat en fin de contrat.",
+      "details": [
+        "Loyers mensuels fixes sur la durée du contrat",
+        "Option d'achat à l'échéance selon les conditions convenues",
+        "Dossier étudié au cas par cas avec l'équipe",
+        "Solution adaptée aux particuliers comme aux professionnels"
+      ]
+    }
+  ],
+  "conditions": [
+    "Permis de conduire valide (durée minimale à confirmer selon le véhicule)",
+    "Pièce d'identité en cours de validité",
+    "Âge minimum requis selon la catégorie de véhicule",
+    "Caution demandée au retrait du véhicule",
+    "État des lieux réalisé ensemble au départ et au retour"
+  ],
+  "about": {
+    "intro": "Riad Auto Luxe est né d'une conviction simple : à Alger, la location de voiture premium peut être exigeante sur la qualité du véhicule tout en restant simple et directe dans la relation avec le client.",
+    "body": "Basée à Chéraga, notre agence sélectionne des véhicules récents et entretenus, pensés pour les déplacements professionnels comme pour les grandes occasions. Notre communauté suit chaque semaine nos disponibilités et nos promotions directement sur Instagram — un lien de confiance que nous prolongeons ici, sur un espace pensé pour préparer votre location sans attendre une réponse en story.",
+    "closing": "Chaque demande est traitée par l'équipe elle-même, par téléphone ou WhatsApp, sans étape inutile entre votre message et les clés du véhicule."
+  }
+}

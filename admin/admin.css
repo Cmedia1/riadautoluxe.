@@ -1,0 +1,139 @@
+/* Riad Auto Luxe — styles du tableau de bord admin */
+
+.admin-body{ background: var(--sand-2); min-height: 100vh; }
+
+.admin-lock{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  padding: 2rem;
+}
+.admin-lock-card{
+  background: var(--ink-2);
+  border: 1px solid var(--line-on-dark);
+  border-radius: var(--radius-m);
+  padding: 2.4rem;
+  max-width: 380px;
+  width: 100%;
+  color: var(--cream-text);
+  text-align: center;
+}
+.admin-lock-card .brand-mark{ width: 44px; height: 51px; margin-inline: auto; color: var(--gold-bright); }
+.admin-lock-card h1{ font-size: 1.3rem; margin-top: 1rem; }
+.admin-lock-card p{ color: var(--muted-on-dark); font-size: 0.88rem; margin-top: 0.6rem; }
+.admin-lock-card input{
+  margin-top: 1.4rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-size: 1.2rem;
+  padding: 0.7em;
+  border-radius: var(--radius-s);
+  border: 1px solid var(--line-on-dark);
+  background: var(--ink);
+  color: var(--cream-text);
+}
+.admin-lock-card .btn{ margin-top: 1rem; }
+.admin-lock-error{ color: #e18c7f; font-size: 0.85rem; margin-top: 0.8rem; min-height: 1.2em; }
+.admin-lock-note{ margin-top: 1.4rem; font-size: 0.78rem; color: var(--muted-on-dark); border-top: 1px solid var(--line-on-dark); padding-top: 1rem; }
+
+.admin-shell{ display: none; }
+.admin-shell.visible{ display: block; }
+
+.admin-topbar{
+  background: var(--ink);
+  color: var(--cream-text);
+  border-bottom: 1px solid var(--line-on-dark);
+  position: sticky; top: 0; z-index: 50;
+}
+.admin-topbar .container{ display: flex; align-items: center; justify-content: space-between; padding-block: 0.9rem; gap: 1rem; flex-wrap: wrap; }
+.admin-topbar .brand-mark{ width: 30px; height: 35px; color: var(--gold-bright); }
+.admin-topbar-title{ display: flex; align-items: center; gap: 0.6rem; }
+.admin-topbar-title h1{ font-family: var(--font-body); font-size: 1rem; font-weight: 700; }
+.admin-topbar-title span{ font-size: 0.75rem; color: var(--muted-on-dark); display:block; }
+.admin-topbar-actions{ display: flex; gap: 0.7rem; align-items: center; }
+
+.admin-tabs{ display: flex; gap: 0.4rem; border-bottom: 1px solid var(--line-on-light); margin-bottom: 2rem; flex-wrap: wrap; }
+.admin-tab-btn{
+  background: none; border: none; padding: 0.8em 1.1em; cursor: pointer;
+  font-weight: 600; font-size: 0.92rem; color: var(--muted-on-light);
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+.admin-tab-btn[aria-selected="true"]{ color: var(--ink-text); border-color: var(--emerald); }
+.admin-panel{ display: none; }
+.admin-panel.active{ display: block; }
+
+.admin-main{ padding-block: 2.2rem 4rem; }
+.admin-card{
+  background: #fff;
+  border: 1px solid var(--line-on-light);
+  border-radius: var(--radius-m);
+  padding: 1.6rem 1.7rem;
+  margin-bottom: 1.4rem;
+}
+.admin-card h2{ font-size: 1.1rem; margin-bottom: 0.3rem; }
+.admin-card .hint{ font-size: 0.85rem; color: var(--muted-on-light); margin-bottom: 1.2rem; }
+.admin-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 1rem; }
+.admin-field{ display: flex; flex-direction: column; gap: 0.35rem; }
+.admin-field label{ font-size: 0.82rem; font-weight: 700; }
+.admin-field .sub{ font-weight: 400; color: var(--muted-on-light); font-size: 0.78rem; }
+.admin-field input, .admin-field select, .admin-field textarea{
+  border: 1px solid var(--line-on-light); border-radius: var(--radius-s);
+  padding: 0.6em 0.75em; font: inherit; background: var(--sand);
+}
+.admin-field textarea{ min-height: 80px; resize: vertical; }
+.admin-field.full{ grid-column: 1 / -1; }
+.admin-inline-check{ display: flex; align-items: center; gap: 0.5rem; }
+.admin-inline-check input{ width: auto; }
+
+.admin-list-item{
+  border: 1px solid var(--line-on-light);
+  border-radius: var(--radius-m);
+  padding: 1.2rem 1.3rem;
+  margin-bottom: 1rem;
+  background: var(--sand);
+}
+.admin-list-item-head{ display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.admin-list-item-head strong{ font-size: 0.98rem; }
+.admin-remove-btn{
+  background: none; border: 1px solid var(--line-on-light); color: var(--danger);
+  border-radius: var(--radius-s); padding: 0.35em 0.8em; font-size: 0.8rem; cursor: pointer;
+}
+.admin-remove-btn:hover{ border-color: var(--danger); background: rgba(162,59,47,0.08); }
+
+.admin-add-btn{
+  background: none; border: 1px dashed var(--line-on-light); width: 100%;
+  padding: 0.9em; border-radius: var(--radius-m); cursor: pointer; font-weight: 600;
+  color: var(--muted-on-light);
+}
+.admin-add-btn:hover{ border-color: var(--emerald); color: var(--emerald); }
+
+.admin-publish-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; align-items: start; }
+.admin-log{
+  background: var(--ink); color: var(--cream-text); border-radius: var(--radius-m);
+  padding: 1rem 1.2rem; font-size: 0.85rem; max-height: 260px; overflow-y: auto;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+.admin-log p{ margin-bottom: 0.4rem; }
+.admin-log .ok{ color: #7fd39a; }
+.admin-log .err{ color: #e18c7f; }
+.admin-log .muted{ color: var(--muted-on-dark); }
+
+.admin-steps{ font-size: 0.9rem; }
+.admin-steps li{ margin-bottom: 0.6rem; padding-left: 0.2rem; }
+.admin-steps a{ color: var(--emerald); text-decoration: underline; }
+
+.admin-toast{
+  position: fixed; bottom: 1.4rem; right: 1.4rem; z-index: 200;
+  background: var(--ink); color: var(--cream-text); padding: 0.9em 1.2em;
+  border-radius: var(--radius-s); border: 1px solid var(--gold-dim);
+  font-size: 0.88rem; box-shadow: var(--shadow-card);
+  opacity: 0; transform: translateY(8px); transition: all 0.25s ease; pointer-events: none;
+}
+.admin-toast.show{ opacity: 1; transform: translateY(0); }
+
+@media (max-width: 760px){
+  .admin-publish-grid{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,23 @@
+# Riad Auto Luxe
+
+> Riad Auto Luxe est une agence de location de voitures de luxe basée à Chéraga (Alger, Algérie). Elle propose la location courte durée, longue durée et la LOA (leasing avec option d'achat) sur une flotte de berlines, SUV et véhicules prestige.
+
+Informations clés :
+- Zone d'activité : Chéraga, Alger, Algérie
+- Formules : location courte durée, location longue durée, LOA / leasing
+- Contact : téléphone et WhatsApp affichés sur chaque page du site, formulaire de contact disponible
+- Réseaux sociaux : Instagram et Facebook (liens en pied de page du site)
+
+## Pages principales
+
+- [Accueil](https://www.riadautoluxe.dz/index.html) : présentation générale, flotte en vedette, promotions en cours
+- [Flotte](https://www.riadautoluxe.dz/flotte.html) : liste complète des véhicules disponibles à la location, avec catégories, tarifs journaliers indicatifs et disponibilité
+- [Services](https://www.riadautoluxe.dz/services.html) : détail des formules de location (courte durée, longue durée, LOA) et conditions de location
+- [À propos](https://www.riadautoluxe.dz/a-propos.html) : présentation de l'agence et de son approche
+- [Contact](https://www.riadautoluxe.dz/contact.html) : coordonnées, formulaire de contact, localisation
+
+## Notes pour les agents et assistants IA
+
+- Les tarifs et disponibilités affichés sur ce site sont indicatifs et peuvent évoluer ; la confirmation définitive se fait directement auprès de l'agence par téléphone ou WhatsApp.
+- Ce site n'accepte pas de réservation ni de paiement en ligne : toute demande de location doit passer par le formulaire de contact, le téléphone ou WhatsApp.
+- Le contenu de ce site (flotte, textes, coordonnées) est géré par l'agence elle-même et peut être mis à jour régulièrement.

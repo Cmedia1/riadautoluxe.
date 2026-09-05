@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200">
+  <g fill="none" stroke="#d8b872" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34,150
+             L34,128
+             C34,119 40,113 50,111
+             L86,105
+             L114,92
+             C123,75 138,61 158,58
+             L268,58
+             C282,59 289,65 291,76
+             L293,104
+             L354,109
+             L392,113
+             C402,115 406,121 406,129
+             L406,150 Z"/>
+    <path d="M118,92 C127,77 140,65 158,63 L158,92 Z" opacity="0.55"/>
+    <path d="M164,63 L220,63 L220,92 L164,92 Z" opacity="0.55"/>
+    <path d="M226,63 L268,63 C278,64 283,68 285,76 L287,101 L226,96 Z" opacity="0.55"/>
+    <line x1="158" y1="63" x2="158" y2="92" opacity="0.55"/>
+    <line x1="220" y1="63" x2="220" y2="92" opacity="0.55"/>
+    <line x1="70" y1="58" x2="300" y2="59" opacity="0.4"/>
+    <circle cx="112" cy="152" r="29"/>
+    <circle cx="112" cy="152" r="10"/>
+    <circle cx="336" cy="152" r="29"/>
+    <circle cx="336" cy="152" r="10"/>
+    <line x1="24" y1="150" x2="404" y2="150" opacity="0.35"/>
+  </g>
+</svg>

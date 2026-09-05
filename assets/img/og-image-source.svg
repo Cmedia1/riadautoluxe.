@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141518"/>
+      <stop offset="1" stop-color="#0a0b0c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Motif d'arcs en filigrane -->
+  <g opacity="0.16" stroke="#b8924a" stroke-width="3" fill="none">
+    <path d="M760,560 L760,360 C760,260 812,180 900,180 C988,180 1040,260 1040,360 L1040,560 Z"/>
+    <path d="M900,560 L900,400 C900,330 935,280 990,280 C1045,280 1080,330 1080,400 L1080,560 Z"/>
+    <path d="M1020,560 L1020,440 C1020,390 1045,355 1090,355 C1135,355 1160,390 1160,440 L1160,560 Z"/>
+  </g>
+
+  <g transform="translate(0,-6)">
+    <g transform="translate(96,196) scale(0.62)">
+      <path d="M40,264 L40,150 C40,84 78,28 140,28 C202,28 240,84 240,150 L240,264 Z" fill="none" stroke="#d8b872" stroke-width="12"/>
+      <path d="M74,264 L74,152 C74,100 102,62 140,62 C178,62 206,100 206,152 L206,264 Z" fill="none" stroke="#d8b872" stroke-width="8" opacity="0.55"/>
+    </g>
+    <text x="230" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#f6f1e7" font-weight="600">Riad Auto Luxe</text>
+    <text x="232" y="352" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="2" fill="#d8b872">LOCATION DE VOITURES DE LUXE</text>
+    <text x="232" y="404" font-family="Arial, sans-serif" font-size="22" fill="#b9b3a6">Chéraga, Alger — courte durée, longue durée &amp; LOA</text>
+  </g>
+</svg>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tableau de bord — Riad Auto Luxe (privé)</title>
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+
+  <!-- Verrou local (déterrent, pas une sécurité forte — voir GUIDE-DEPLOIEMENT.md) -->
+  <div class="admin-lock" id="admin-lock">
+    <div class="admin-lock-card">
+      <svg class="brand-mark" viewBox="0 0 240 280" aria-hidden="true">
+        <path d="M20,264 L20,150 C20,84 58,28 120,28 C182,28 220,84 220,150 L220,264 Z" fill="none" stroke="currentColor" stroke-width="11"/>
+      </svg>
+      <h1 id="lock-title">Accès privé</h1>
+      <p id="lock-sub">Entrez votre code d'accès pour ouvrir le tableau de bord.</p>
+      <input type="password" id="pin-input" inputmode="numeric" autocomplete="off" placeholder="••••">
+      <div class="admin-lock-error" id="pin-error"></div>
+      <button class="btn btn-gold btn-block" id="pin-submit">Continuer</button>
+      <p class="admin-lock-note">Ce code protège des visites accidentelles sur cet appareil : ce n'est pas une sécurité forte, ne partagez jamais le lien de cette page publiquement. La vraie protection de vos données vient du token GitHub utilisé pour publier, que vous seul détenez. <button type="button" id="pin-reset" style="background:none;border:none;color:var(--gold-bright);text-decoration:underline;cursor:pointer;padding:0;font:inherit">Oublier ce code</button></p>
+    </div>
+  </div>
+
+  <!-- Tableau de bord -->
+  <div class="admin-shell" id="admin-shell">
+    <div class="admin-topbar">
+      <div class="container">
+        <div class="admin-topbar-title">
+          <svg class="brand-mark" viewBox="0 0 240 280" aria-hidden="true"><path d="M20,264 L20,150 C20,84 58,28 120,28 C182,28 220,84 220,150 L220,264 Z" fill="none" stroke="currentColor" stroke-width="11"/></svg>
+          <div>
+            <h1>Riad Auto Luxe</h1>
+            <span>Tableau de bord admin</span>
+          </div>
+        </div>
+        <div class="admin-topbar-actions">
+          <span id="load-status" style="font-size:0.82rem;color:var(--muted-on-dark)"></span>
+          <a class="btn btn-outline-dark btn-small" href="../index.html" target="_blank" rel="noopener">Voir le site</a>
+          <button class="btn btn-outline-dark btn-small" id="logout-btn">Se déconnecter</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container admin-main">
+      <div class="admin-tabs" role="tablist">
+        <button class="admin-tab-btn" data-panel="panel-flotte" aria-selected="true" role="tab">Flotte</button>
+        <button class="admin-tab-btn" data-panel="panel-contenu" aria-selected="false" role="tab">Contenu du site</button>
+        <button class="admin-tab-btn" data-panel="panel-publier" aria-selected="false" role="tab">Publication</button>
+      </div>
+
+      <!-- ============================= FLOTTE ============================= -->
+      <div class="admin-panel active" id="panel-flotte">
+        <div class="admin-card">
+          <h2>Véhicules</h2>
+          <p class="hint">Chaque voiture ajoutée ici apparaît automatiquement sur la page Flotte, et sur l'accueil si elle fait partie des quatre premières. Le champ « Image » peut être un chemin du site (ex. <code>assets/img/car-suv.svg</code>) ou une URL complète vers une photo que vous hébergez ailleurs.</p>
+          <div id="fleet-fields"></div>
+        </div>
+      </div>
+
+      <!-- ============================= CONTENU ============================= -->
+      <div class="admin-panel" id="panel-contenu">
+        <div class="admin-card">
+          <h2>Coordonnées &amp; réglages</h2>
+          <p class="hint">Utilisées dans l'en-tête, le pied de page, les boutons WhatsApp/téléphone et le schema.org sur tout le site.</p>
+          <div class="admin-grid" id="business-fields"></div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Accueil — en-tête (hero)</h2>
+          <div class="admin-grid">
+            <div class="admin-field"><label>Titre — ligne 1</label><input type="text" id="hero-title1"></div>
+            <div class="admin-field"><label>Titre — ligne 2 (accent doré)</label><input type="text" id="hero-title2"></div>
+            <div class="admin-field full"><label>Sous-titre</label><textarea id="hero-subtitle"></textarea></div>
+            <div class="admin-field"><label>Bouton principal</label><input type="text" id="hero-cta1"></div>
+            <div class="admin-field"><label>Bouton secondaire (WhatsApp)</label><input type="text" id="hero-cta2"></div>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Bandeau promo</h2>
+          <div class="admin-grid">
+            <div class="admin-field admin-inline-check"><input type="checkbox" id="promo-active"><label>Afficher le bandeau promo</label></div>
+            <div class="admin-field"><label>Étiquette</label><input type="text" id="promo-label"></div>
+            <div class="admin-field full"><label>Texte de la promotion</label><input type="text" id="promo-text"></div>
+            <div class="admin-field"><label>Texte du bouton</label><input type="text" id="promo-cta"></div>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Statistiques (bandeau sous l'en-tête)</h2>
+          <div id="stats-fields"></div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Pourquoi nous choisir</h2>
+          <div id="whyus-fields"></div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Services</h2>
+          <p class="hint">Le titre, le résumé et l'identifiant de chaque service existant peuvent être modifiés ; les détails (page Services) sont des listes à puces modifiables. L'ajout ou la suppression d'un service entier se fait directement dans le fichier JSON téléchargé, pour garder les trois formules cohérentes avec la page.</p>
+          <div id="services-fields"></div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Conditions de location</h2>
+          <div id="conditions-fields"></div>
+        </div>
+
+        <div class="admin-card">
+          <h2>À propos</h2>
+          <div class="admin-grid">
+            <div class="admin-field full"><label>Phrase d'introduction</label><textarea id="about-intro-field"></textarea></div>
+            <div class="admin-field full"><label>Paragraphe principal</label><textarea id="about-body-field"></textarea></div>
+            <div class="admin-field full"><label>Phrase de conclusion</label><textarea id="about-closing-field"></textarea></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================= PUBLICATION ============================= -->
+      <div class="admin-panel" id="panel-publier">
+        <div class="admin-publish-grid">
+          <div>
+            <div class="admin-card">
+              <h2>Publier sur GitHub</h2>
+              <p class="hint">Envoie directement vos modifications dans le dépôt qui héberge le site (GitHub Pages). Le site se met à jour automatiquement en 1 à 2 minutes.</p>
+              <div class="admin-grid">
+                <div class="admin-field"><label>Propriétaire (owner)</label><input type="text" id="gh-owner" placeholder="ex. votre-nom-utilisateur"></div>
+                <div class="admin-field"><label>Dépôt (repo)</label><input type="text" id="gh-repo" placeholder="ex. riadautoluxe-site"></div>
+                <div class="admin-field"><label>Branche</label><input type="text" id="gh-branch" placeholder="main"></div>
+                <div class="admin-field"><label>Token d'accès personnel</label><input type="password" id="gh-token" placeholder="github_pat_…"></div>
+                <div class="admin-field full admin-inline-check"><input type="checkbox" id="gh-remember"><label>Se souvenir du token sur cet appareil uniquement</label></div>
+              </div>
+              <button class="btn btn-gold" id="publish-btn" style="margin-top:1.2rem">Publier les modifications</button>
+              <div class="admin-log" id="publish-log" style="margin-top:1rem"><p class="muted">En attente de publication…</p></div>
+            </div>
+          </div>
+          <div>
+            <div class="admin-card">
+              <h2>Créer votre token GitHub</h2>
+              <ol class="admin-steps">
+                <li>Sur GitHub : photo de profil → <strong>Settings</strong> → <strong>Developer settings</strong> → <strong>Personal access tokens</strong> → <strong>Fine-grained tokens</strong>.</li>
+                <li><strong>Generate new token</strong>, donnez-lui un nom, et choisissez <strong>Only select repositories</strong> → sélectionnez le dépôt de ce site.</li>
+                <li>Sous <strong>Repository permissions</strong>, réglez <strong>Contents</strong> sur <strong>Read and write</strong>.</li>
+                <li>Générez, copiez le token (il ne sera montré qu'une fois) et collez-le ci-contre.</li>
+              </ol>
+              <p class="hint" style="margin-top:1rem">Ce token n'est envoyé qu'à l'API officielle de GitHub, jamais ailleurs. Ne le partagez avec personne.</p>
+            </div>
+            <div class="admin-card">
+              <h2>Sans token GitHub</h2>
+              <p class="hint">Téléchargez les fichiers modifiés et déposez-les manuellement dans votre dépôt via l'interface web de GitHub (glisser-déposer dans le dossier <code>assets/data/</code>, en écrasant les fichiers existants).</p>
+              <div style="display:flex; gap:0.7rem; flex-wrap:wrap">
+                <button class="btn btn-outline-light btn-small" id="download-content">Télécharger site-content.json</button>
+                <button class="btn btn-outline-light btn-small" id="download-cars">Télécharger cars.json</button>
+              </div>
+            </div>
+            <div class="admin-card">
+              <button class="btn btn-outline-light btn-block" id="reload-btn">Recharger depuis le site en ligne (annule les modifications non publiées)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin-toast" id="admin-toast"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
