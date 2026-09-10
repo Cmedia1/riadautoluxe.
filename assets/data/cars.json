@@ -1,6 +1,10 @@
 {
   "note": "Exemple de flotte à remplacer par les vraies voitures et photos de Riad Auto Luxe depuis le dashboard admin (/admin/). Tant que 'imagePlaceholder' vaut true, une illustration générique est affichée à la place d'une vraie photo.",
-  "categories": ["Prestige", "SUV", "Berline"],
+  "categories": [
+    "Prestige",
+    "SUV",
+    "Berline"
+  ],
   "cars": [
     {
       "id": "classe-c",
@@ -13,7 +17,7 @@
       "pricePerDay": "12 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-sedan.svg",
+      "image": "assets/img/classe-c.jpg",
       "imagePlaceholder": true,
       "description": "Une berline allemande sobre et confortable, pensée pour les trajets d'affaires et les longues distances."
     },
@@ -28,7 +32,7 @@
       "pricePerDay": "18 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-coupe.svg",
+      "image": "assets/img/images.jpg",
       "imagePlaceholder": true,
       "description": "Le choix classique pour se présenter avec assurance à un rendez-vous professionnel ou un mariage."
     },
@@ -43,7 +47,7 @@
       "pricePerDay": "17 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-coupe.svg",
+      "image": "assets/img/images(1).jpg",
       "imagePlaceholder": true,
       "description": "Dynamique et racée, la Série 5 conjugue plaisir de conduite et image d'affaires."
     },
@@ -58,7 +62,7 @@
       "pricePerDay": "26 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-suv.svg",
+      "image": "assets/img/images(2).jpg",
       "imagePlaceholder": true,
       "description": "Prestance et carrure imposante pour un SUV premium, à l'aise en ville comme sur route."
     },
@@ -73,7 +77,7 @@
       "pricePerDay": "22 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-suv.svg",
+      "image": "assets/img/images(3).jpg",
       "imagePlaceholder": true,
       "description": "Un SUV 7 places spacieux, idéal pour les familles et les groupes qui voyagent ensemble."
     },
@@ -88,7 +92,7 @@
       "pricePerDay": "32 000",
       "currency": "DA",
       "available": false,
-      "image": "assets/img/car-suv.svg",
+      "image": "assets/img/images(4).jpg",
       "imagePlaceholder": true,
       "description": "Le SUV sportif par excellence, pour une occasion qui mérite un peu plus de caractère."
     },
@@ -103,7 +107,7 @@
       "pricePerDay": "19 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-suv.svg",
+      "image": "assets/img/images(5).jpg",
       "imagePlaceholder": true,
       "description": "Un excellent compromis entre confort premium et budget maîtrisé sur la longue durée."
     },
@@ -118,7 +122,7 @@
       "pricePerDay": "16 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/car-sedan.svg",
+      "image": "assets/img/images(6).jpg",
       "imagePlaceholder": true,
       "description": "Ligne élégante et habitacle raffiné pour rouler sans concession sur le confort."
     }
