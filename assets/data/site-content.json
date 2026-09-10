@@ -10,7 +10,7 @@
     "streetAddress": "À compléter (adresse exacte de l'agence)",
     "postalCode": "16002",
     "latitude": 36.7667,
-    "longitude": 2.9500,
+    "longitude": 2.95,
     "phonePrimaryDisplay": "0562 46 57 99",
     "phonePrimaryIntl": "+213562465799",
     "phoneSecondaryDisplay": "0696 03 96 41",
@@ -39,9 +39,18 @@
     "cta": "En profiter sur WhatsApp"
   },
   "stats": [
-    { "value": "215K+", "label": "Communauté Instagram" },
-    { "value": "Chéraga", "label": "Agence basée à Alger" },
-    { "value": "24/48h", "label": "Réponse sur WhatsApp" }
+    {
+      "value": "215K+",
+      "label": "Communauté Instagram"
+    },
+    {
+      "value": "Chéraga",
+      "label": "Agence basée à Alger"
+    },
+    {
+      "value": "24/48h",
+      "label": "Réponse sur WhatsApp"
+    }
   ],
   "whyUs": [
     {
