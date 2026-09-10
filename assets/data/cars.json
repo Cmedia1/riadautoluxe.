@@ -47,7 +47,7 @@
       "pricePerDay": "17 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/images-(1).jpg",
+      "image": "assets/img/images (1).jpg",
       "imagePlaceholder": true,
       "description": "Dynamique et racée, la Série 5 conjugue plaisir de conduite et image d'affaires."
     },
@@ -62,7 +62,7 @@
       "pricePerDay": "26 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/images-(2).jpg",
+      "image": "assets/img/images (2).jpg",
       "imagePlaceholder": true,
       "description": "Prestance et carrure imposante pour un SUV premium, à l'aise en ville comme sur route."
     },
@@ -77,7 +77,7 @@
       "pricePerDay": "22 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/images-(3).jpg",
+      "image": "assets/img/images (3).jpg",
       "imagePlaceholder": true,
       "description": "Un SUV 7 places spacieux, idéal pour les familles et les groupes qui voyagent ensemble."
     },
@@ -92,7 +92,7 @@
       "pricePerDay": "32 000",
       "currency": "DA",
       "available": false,
-      "image": "assets/img/images-(4).jpg",
+      "image": "assets/img/images (4).jpg",
       "imagePlaceholder": true,
       "description": "Le SUV sportif par excellence, pour une occasion qui mérite un peu plus de caractère."
     },
@@ -107,7 +107,7 @@
       "pricePerDay": "19 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/images-(5).jpg",
+      "image": "assets/img/images (5).jpg",
       "imagePlaceholder": true,
       "description": "Un excellent compromis entre confort premium et budget maîtrisé sur la longue durée."
     },
@@ -122,7 +122,7 @@
       "pricePerDay": "16 000",
       "currency": "DA",
       "available": true,
-      "image": "assets/img/images-(6).jpg",
+      "image": "assets/img/images (6).jpg",
       "imagePlaceholder": true,
       "description": "Ligne élégante et habitacle raffiné pour rouler sans concession sur le confort."
     }
